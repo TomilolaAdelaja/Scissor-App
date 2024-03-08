@@ -12,7 +12,7 @@ function FAQs() {
         </div>
 
 
-        <div className="mx-auto w-[50%] pt-[60px]">
+        <div className="mx-auto w-[52%] pt-[60px]">
 
             <div className="border-gray-300 border-b-[1px]">
                 <div className="flex justify-between">
