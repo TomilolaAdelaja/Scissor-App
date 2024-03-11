@@ -2,7 +2,7 @@ import React from 'react'
 
 function FAQs() {
   return (
-    <div className="relative h-[900px]">
+    <div className="relative h-[900px]" id='FAQs'>
         <img src="../src/assets/Group 3 (1).png" alt="Vectors" className="absolute top-[0px] left-[0px]"/>
         <img src="../src/assets/Group 2 (2).png" alt="Vectors" className="absolute bottom-[0px] right-[0px]"/>
 

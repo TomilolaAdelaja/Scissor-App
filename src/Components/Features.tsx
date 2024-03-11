@@ -2,7 +2,7 @@ import React from 'react'
 
 function Features() {
   return (
-    <div className="grid grid-cols-[380px,repeat(2,_1fr)] gap-[64px] py-[105px] pb-[90px] px-[85px]">
+    <div className="grid grid-cols-[380px,repeat(2,_1fr)] gap-[64px] py-[105px] pb-[90px] px-[85px]" id='Features'>
         <div className="relative">
             <img src="../src/assets/Line 70.svg" alt="slash" className="absolute left-[-20px]" />
             <h1 className="pb-[20px] text-4xl font-bold">Why choose <span className="text-[#0051cb]">Scissors</span></h1>

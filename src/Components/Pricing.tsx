@@ -8,8 +8,8 @@ function Pricing() {
             <h2 className="text-4xl font-bold pt-[60px] pb-[18px]">A <span className="text-[#0051cb]">price perfect</span> for your needs.</h2>
             <p className="w-[38%] mx-auto text-[16px] pb-[60px]">From catering for your personal business, event, social needs you can be rest assured we have you in mind in our pricing.</p>
         </div>
-        <div className="flex justify-center mx-auto pt-[60px]">
-            <div className="border-[#005AE2] border-[1px] h-[80%] border-r-[0px] px-[45px] pt-[10px] pb-[25px] w-[300px] rounded-md rounded-r-none">
+        <div className="flex justify-center mx-auto pt-[60px]" id='Pricing'>
+            <div className="border-[#005AE2] border-[1px] h-[80%] border-r-[0px] px-[40px] pt-[10px] pb-[25px] w-[300px] rounded-md rounded-r-none">
                 <p className="text-[18px] pt-[8px] pb-[14px]">Basic</p>
                 <h3 className="text-3xl font-semibold">Free</h3>
                 <p className="text-[18px] pt-[12px] pb-[21px] font-normal">Free plan for all users</p>
@@ -35,8 +35,8 @@ function Pricing() {
                 </ul>
             </div>
 
-            <div className="border-[#005AE2] border-[1px] h-[80%] border-l-[0px] px-[45px] pt-[10px] pb-[25px] w-[300px] rounded-md rounded-l-none">
-            <p className="text-[18px] pt-[8px] pb-[14px]">Teams</p>
+            <div className="border-[#005AE2] border-[1px] h-[80%] border-l-[0px] px-[40px] pt-[10px] pb-[25px] w-[300px] rounded-md rounded-l-none">
+                <p className="text-[18px] pt-[8px] pb-[14px]">Teams</p>
                 <h3 className="text-3xl font-semibold">$25/month</h3>
                 <p className="text-[18px] pt-[12px] pb-[21px]">Share with up to 10 users</p>
                 <ul>
@@ -50,7 +50,7 @@ function Pricing() {
         </div>
 
         <div className="flex justify-center items-center pb-[100px]">
-            <a href="" className="text-[#0051cb] bg-[#fff] border-[#0051cb] mr-6 border-[1px] rounded-[30px] px-[40px] py-[8px]">Get Custom Pricing</a>
+            <a href="" className="text-[#0065fe] bg-[#fff] border-[#0065fe] mr-6 border-[1px] rounded-[30px] px-[40px] py-[8px]">Get Custom Pricing</a>
             <a href="" className="bg-[#0065FE] bg-opacity-85 text-center text-white rounded-[30px] px-[40px] py-[8px]">Select Pricing</a>
         </div>
     </div>

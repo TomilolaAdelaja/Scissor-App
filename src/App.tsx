@@ -7,9 +7,9 @@ import URL from "./Components/URL"
 import FAQs from "./Components/FAQs"
 import GetStarted from "./Components/GetStarted"
 import Footer from "./Components/Footer"
+import { Outlet } from "react-router-dom"
 
 function App() {
-
   return (
     <div>
       <Navbar/>
@@ -21,6 +21,7 @@ function App() {
       <FAQs/>
       <GetStarted/>
       <Footer/>
+      <Outlet/>
     </div>
   )
 }
