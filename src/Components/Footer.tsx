@@ -25,7 +25,7 @@ function Footer() {
             <div className="grid grid-cols-4 w-[85%] gap-x-20 gap-y-1">
 
                 <div>
-                    <h4 className="text-[20px] font-medium pb-[10px]">Why Scissor?</h4>
+                    <h4 className="text-[20px] font-semibold pb-[10px]">Why Scissor?</h4>
                     <ul>
                         <li className="pb-[3px]"><a href="">Scissor 101</a></li>
                         <li className="pb-[3px]"><a href="">Integration & API</a></li>
@@ -34,7 +34,7 @@ function Footer() {
                 </div>
 
                 <div>
-                    <h4 className="text-[20px] font-medium pb-[10px]">Solutions</h4>
+                    <h4 className="text-[20px] font-semibold pb-[10px]">Solutions</h4>
                     <ul>
                         <li className="pb-[3px]"><a href="">Social Media</a></li>
                         <li className="pb-[3px]"><a href="">Digital Marketing</a></li>
@@ -44,7 +44,7 @@ function Footer() {
                 </div>
 
                 <div>
-                    <h4 className="font-medium text-[20px] pb-[10px]">Products</h4>
+                    <h4 className="font-semibold text-[20px] pb-[10px]">Products</h4>
                     <ul>
                         <li className="pb-[3px]"><a href="">Link Management</a></li>
                         <li className="pb-[3px]"><a href="">QR Codes</a></li>
@@ -53,7 +53,7 @@ function Footer() {
                 </div>
 
                 <div>
-                    <h4 className="text-[20px] font-medium pb-[10px]">Company</h4>
+                    <h4 className="text-[20px] font-semibold pb-[10px]">Company</h4>
                     <ul>
                         <li className="pb-[3px]"><a href="">About Scissor</a></li>
                         <li className="pb-[3px]"><a href="">Careers</a></li>
@@ -65,7 +65,7 @@ function Footer() {
                 </div>
 
                 <div>
-                    <h4 className="text-[20px] font-medium pb-[10px]">Resources</h4>
+                    <h4 className="text-[20px] font-semibold pb-[10px]">Resources</h4>
                     <ul>
                         <li className="pb-[3px]"><a href="">Blog</a></li>
                         <li className="pb-[3px]"><a href="">Resource Library</a></li>
@@ -79,7 +79,7 @@ function Footer() {
                 </div>
 
                 <div>
-                    <h4 className="text-[20px] font-medium pb-[10px]">Features</h4>
+                    <h4 className="text-[20px] font-semibold pb-[10px]">Features</h4>
                     <ul>
                         <li className="pb-[3px]"><a href="">Branded Links</a></li>
                         <li className="pb-[3px]"><a href="">Mobile Links</a></li>
@@ -90,7 +90,7 @@ function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <h4 className="text-[20px] font-medium pb-[10px]">Legal</h4>
+                    <h4 className="text-[20px] font-semibold pb-[10px]">Legal</h4>
                     <ul>
                         <li className="pb-[3px]"><a href="">Privacy Policy</a></li>
                         <li className="pb-[3px]"><a href="">Cookie Policy</a></li>

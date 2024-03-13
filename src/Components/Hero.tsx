@@ -3,7 +3,7 @@ import React from 'react'
 function Hero() {
   return (
     <div>
-      <h1 className="text-[50px] w-[80%] text-center mx-auto relative pt-16 pb-8 font-semibold leading-loose tracking-[0.2px">Optimize Your Online Experience with Our Advanced <span className="text-[#0051cb]">URL Shortening</span> Solution <img src="../src/assets/Vector 3.svg" alt="slash" className="absolute top-[250px] left-[462px]"/></h1>
+      <h1 className="text-[50px] w-[80%] text-center mx-auto relative pt-16 pb-8 font-black leading-loose">Optimize Your Online Experience with Our Advanced <span className="text-[#0051cb]">URL Shortening</span> Solution <img src="../src/assets/Vector 3.svg" alt="slash" className="absolute top-[250px] left-[462px]"/></h1>
 
         <p className="mx-auto w-[53%] text-center text-[17px] tracking-[0.3px] pb-[60px] leading-7">Personalize your shortened URLs to align with your brand identity. Utilize custom slugs, branded links, and domain customization options to reinforce your brand presence and enhance user engagement.</p>
 

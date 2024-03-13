@@ -50,8 +50,8 @@ function Pricing() {
         </div>
 
         <div className="flex justify-center items-center pb-[100px]">
-            <a href="" className="text-[#0065fe] bg-[#fff] border-[#0065fe] mr-6 border-[1px] rounded-[30px] px-[40px] py-[8px]">Get Custom Pricing</a>
-            <a href="" className="bg-[#0065FE] bg-opacity-85 text-center text-white rounded-[30px] px-[40px] py-[8px]">Select Pricing</a>
+            <a href="" className="text-[#0065fe] font-medium bg-[#fff] border-[#0065fe] mr-6 border-[1px] rounded-[30px] px-[40px] py-[8px]">Get Custom Pricing</a>
+            <a href="" className="bg-[#0065FE] bg-opacity-85 text-center font-medium text-white rounded-[30px] px-[40px] py-[8px]">Select Pricing</a>
         </div>
     </div>
   )

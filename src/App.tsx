@@ -1,27 +1,24 @@
-import Navbar from "./Components/Navbar"
-import Hero from "./Components/Hero"
-import Stats from "./Components/Stats"
-import Features from "./Components/Features"
-import Pricing from "./Components/Pricing"
-import URL from "./Components/URL"
-import FAQs from "./Components/FAQs"
-import GetStarted from "./Components/GetStarted"
-import Footer from "./Components/Footer"
-import { Outlet } from "react-router-dom"
+import Home from './pages/Home';
+import { BrowserRouter , Routes, Route } from 'react-router-dom'
+import SharedLayout from '../src/Components/SharedLayout'
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Learnmore from './pages/Learnmore';
+
+
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <Stats/>
-      <Features/>
-      <Pricing/>
-      <URL/>
-      <FAQs/>
-      <GetStarted/>
-      <Footer/>
-      <Outlet/>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element = {<Login />}/>
+            <Route path='LandingPage' element={<SharedLayout />}/>
+            <Route index  element={<Home />}/>
+            <Route path='Signup' element={<Signup />}/>
+            <Route path='Learnmore' element={<Learnmore />}/>
+          </Routes>
+        </BrowserRouter>
     </div>
   )
 }
