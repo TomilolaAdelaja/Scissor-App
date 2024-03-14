@@ -1,13 +1,17 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Navigate } from "react-router-dom";
-import { useAuth } from "./ContextApi";
+import { useAuth } from "./ContextProvider";
 
-const ProtectRoute = ({ children }) => {
+type ProtectedRoute = {
+    children: ReactNode;
+}
+
+const ProtectRoute = ({ children }: ProtectedRoute) => {
 	// const navigate=useNavigate();
 	const auth = useAuth();
 
 	if (!auth.user) {
-		<Navigate to="/login" />;
+		<Navigate to="/signup" />;
 	}
 	return children;
 };

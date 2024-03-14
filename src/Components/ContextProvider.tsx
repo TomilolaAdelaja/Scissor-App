@@ -1,44 +1,62 @@
-import { ReactNode, createContext, useContext, useState } from 'react'
-// import Login from '../pages/Login';
+import React, { createContext, useContext, useState, ReactNode, Dispatch, SetStateAction } from 'react';
 
+export type USER = {
+    email: string;
+    password: string | number;
+}
 
 type AuthContextType = {
     isAuthenticated: boolean;
+    user: USER;
+    setUser: Dispatch<SetStateAction<USER>>;
     login: () => void;
-    logout: () => void;
-    Children: ReactNode;
-  };
+    logout: () => void;
+};
 
-const AuthContext = createContext<AuthContextType | null>(null);
+const AuthContext = createContext<AuthContextType>({
+    isAuthenticated: false,
+    user: { email: '', password: '' },
+    setUser: () => {},
+    login: () => {},
+    logout: () => {},
+});
 
-export const AuthProvider = ({Children}:AuthContextType) => {
+type AuthProviderProps = {
+    children: ReactNode;
+}
 
-    const [user, setUser] = useState(null);
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
+export const AuthProvider = ({ children }: AuthProviderProps) => {
+  
+    const [user, setUser] = useState<USER>({ email: '', password: '' });
 
+    const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+
+ 
     const login = () => {
-        setUser(user);
-        setIsAuthenticated(true);
+        // setIsAuthenticated(true);
+        setUser(user)
     };
+
 
     const logout = () => {
-        setUser(null);
-        setIsAuthenticated(false);
+        // setIsAuthenticated(false);
+        setUser(user)
     };
 
-    const value: AuthContextType = {
+    const contextValue: AuthContextType = {
         isAuthenticated,
+        user,
+        setUser,
         login,
-        logout,
-        Children,
-      };
+        logout,
+    };
 
-  return (
-    <AuthContext.Provider value={value}>
-
-        {Children}
+  
+    return (
+        <AuthContext.Provider value={contextValue}>
+            {children}
         </AuthContext.Provider>
-  )
+    );
 }
 
 export const useAuth = () => {

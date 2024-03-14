@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../Components/Footer'
 
-const Learnmore = () => {
+const LearnMore = () => {
   return (
     <div>
       <div className=" flex flex-col h-[180vh] w-[30vw] mx-auto justify-center items-center py-[30px]">
@@ -44,4 +44,4 @@ const Learnmore = () => {
   )
 }
 
-export default Learnmore
+export default LearnMore

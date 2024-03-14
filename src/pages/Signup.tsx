@@ -1,18 +1,26 @@
-import React from 'react'
 import Footer from '../Components/Footer'
 
 const Signup = () => {
+  const handleLogin = () => {
+   console.log("Click");
+  //  setName(event.target.value);
+  };
+
+  function setUser(value: string): void {
+    throw new Error('Function not implemented.')
+  }
+
   return (
     <div>
       <div className=" flex flex-col h-[120vh] w-[35vw] mx-auto justify-center items-center py-[30px]">
 
-<form action="" className="w-full h-full bg-[#f5f5f5] rounded-md border-[#0051cb] px-5 pt-[10px]">
+<form action="" onSubmit={handleLogin} className="w-full h-full bg-[#f5f5f5] rounded-md border-[#0051cb] px-5 pt-[10px]">
 
   <p className="mx-auto text-center text-[14px]">Log in with:</p>
 
   <div className="flex justify-center items-center gap-8">
-    <button className="text-white bg-[#005AE2] font-normal px-[18px] py-[10px] flex justify-around items-center gap-2 rounded-sm mt-[18px]" onClick={handleLogin}><img src="../src/assets/logo_googleg_48dp.svg" alt="" />Google</	button>
-    <button className="text-white bg-[#005AE2] font-normal px-[18px] py-[10px] flex justify-around items-center gap-2 rounded-sm mt-[18px]" onClick={handleLogin}><img src="../src/assets/path.svg" alt="" />Apple</button>
+    <button className="text-white bg-[#005AE2] font-normal px-[18px] py-[10px] flex justify-around items-center gap-2 rounded-sm mt-[18px]" typeof='Submit'><img src="../src/assets/logo_googleg_48dp.svg" alt="" />Google</	button>
+    <button className="text-white bg-[#005AE2] font-normal px-[18px] py-[10px] flex justify-around items-center gap-2 rounded-sm mt-[18px]" typeof='Submit'><img src="../src/assets/path.svg" alt="" />Apple</button>
   </div>
 
   <fieldset>
@@ -26,7 +34,7 @@ const Signup = () => {
 
     <input type="password" placeholder="Password" src="../src/assets/Vector.svg" name="" id="" className="border mx-auto border-[#0065FE] w-[90%] flex justify-center rounded-lg px-9 py-[10px] placeholder:text-gray-300 placeholder:justify-start active:border-[#0065fe] hover:border-[#0065fe] focus:border-[#0065fe] outline-[#0065fe]" /><img src="../src/assets/Vector.svg" alt="" />
 
-    <input type="password" placeholder="Password" src="../src/assets/Vector.svg" name="" id="" className="border mx-auto border-[#0065FE] w-[90%] flex justify-center rounded-lg px-9 py-[10px] placeholder:text-gray-300 placeholder:justify-start active:border-[#0065fe] hover:border-[#0065fe] focus:border-[#0065fe] outline-[#0065fe]" /><img src="../src/assets/Vector.svg" alt="" />
+    <input type="password" placeholder="Retype Password" src="../src/assets/Vector.svg" name="" id="" className="border mx-auto border-[#0065FE] w-[90%] flex justify-center rounded-lg px-9 py-[10px] placeholder:text-gray-300 placeholder:justify-start active:border-[#0065fe] hover:border-[#0065fe] focus:border-[#0065fe] outline-[#0065fe]" /><img src="../src/assets/Vector.svg" alt="" />
 
 
 <p className="text-left text-gray-400 text-[14px] pr-[20px]">6 or more characters, one number, one uppercase & one lowercase.</p>
@@ -45,3 +53,7 @@ const Signup = () => {
 }
 
 export default Signup
+
+function setName(value: string) {
+  throw new Error('Function not implemented.');
+}
