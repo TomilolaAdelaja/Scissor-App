@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios, {isCancel, AxiosError} from 'axios';
 import InputShortener from "../pages/Test";
 
