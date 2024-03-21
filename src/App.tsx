@@ -3,7 +3,7 @@ import { BrowserRouter , Routes, Route } from 'react-router-dom'
 import SharedLayout from '../src/Components/SharedLayout'
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import LearnMore from './pages/LearnMore.tsx';
+import LearnMore from './pages/Trial.tsx';
 import { AuthProvider, useAuth } from './Components/ContextProvider';
 import ProtectedRoute from './Components/ProtectedRoute';
 // import Test from './pages/test';
