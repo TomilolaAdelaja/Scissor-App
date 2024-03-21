@@ -1,7 +1,6 @@
 // import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from './ContextProvider'
-import logo from '../assets/logo.svg'
 
 
 function Navbar() {
@@ -20,7 +19,7 @@ function Navbar() {
 
         {/* Logo */}
         <div className="w-[15%]">
-            <a href="/"><img src= {logo} alt="logo" width="125"/></a>
+            <a href="/"><img src="../src/assets/logo.svg" alt="logo" width="125"/></a>
         </div>
 
         {/* Middle Nav */}
