@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import Footer from '../Components/Footer'
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from '../../firebase/firebaseConfig'
-import firebase from "firebase/app";
 import 'firebase/auth';
 
 
@@ -21,7 +20,7 @@ const Signup = () => {
   //  setName(event.target.value);
   };
 
-  function setUser(value: string): void {
+  function setUser(_value: string): void {
     throw new Error('Function not implemented.')
   }
 
@@ -78,6 +77,6 @@ const Signup = () => {
 
 export default Signup
 
-function setName(value: string) {
-  throw new Error('Function not implemented.');
-}
+// function setName(value: string) {
+//   throw new Error('Function not implemented.');
+// }
