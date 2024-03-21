@@ -1,7 +1,7 @@
 // import React from 'react'
 // import Footer from '../Components/Footer'
 
-const LearnMore = () => {
+const Trial = () => {
   return (
     <div className="pt-[80px] bg-[url(../src/assets/bg-learnmore.png)] bg-gray-400">
       <h3 className="text-center text-[26px] font-bold">Let's get in touch</h3>
@@ -125,4 +125,4 @@ const LearnMore = () => {
   )
 }
 
-export default LearnMore
+export default Trial
