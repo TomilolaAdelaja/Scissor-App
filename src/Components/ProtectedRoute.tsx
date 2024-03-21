@@ -1,18 +1,21 @@
-import React, { ReactNode } from "react";
-import { Navigate } from "react-router-dom";
-import { useAuth } from "./ContextProvider";
-
-type ProtectedRoute = {
-    children: ReactNode;
+import { Navigate, 
+    // Route, RouteProps 
+} from "react-router-dom";
+import  { useAuth }from "../Components/ContextProvider"
+import { ReactNode } from "react";
+interface ProtectedProps 
+// extends RouteProps
+{
+children:ReactNode
 }
 
-const ProtectRoute = ({ children }: ProtectedRoute) => {
-	// const navigate=useNavigate();
+const ProtectRoute:React.FC<ProtectedProps> = ({ children}) => {
+	
 	const auth = useAuth();
-
-	if (!auth.user) {
+	if (!auth?.user === null) {
 		<Navigate to="/signup" />;
 	}
+    // return<Route {...rest}/>
 	return children;
 };
 

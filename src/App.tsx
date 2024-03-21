@@ -6,6 +6,8 @@ import Signup from './pages/Signup';
 import LearnMore from './pages/LearnMore';
 import { AuthProvider, useAuth } from './Components/ContextProvider';
 import ProtectedRoute from './Components/ProtectedRoute';
+// import Test from './pages/test';
+// import FAQs from './Components/FAQs';
 
 
 
@@ -20,13 +22,17 @@ function App() {
             <Route path="/" element = {<Login />}/>
             <Route path='signup' element={<Signup />}/>
 
-            <Route path="delivery" element={<ProtectedRoute>
+            {/* <Route path="delivery" element={<ProtectedRoute>
             <SharedLayout/>
             </ProtectedRoute>
-            }/>
-            <Route path='landingPage' element={<SharedLayout />}>
-              <Route path='Home' element={<Home />}/>
-              <Route path='learnMore' element={<LearnMore />}/>
+            }/> */}
+            <Route path='/landingPage' element={<SharedLayout />}>
+              <Route index element={
+             <ProtectedRoute>
+                <Home />
+             </ProtectedRoute>     
+              }/>
+              <Route path='learn' element={<LearnMore />}/>
             </Route>
           </Routes>
         </BrowserRouter>
