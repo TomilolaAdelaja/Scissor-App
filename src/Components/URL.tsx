@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axios, {isCancel, AxiosError} from 'axios';
+import axios from 'axios';
 import InputShortener from "../pages/Test";
 
 
@@ -10,7 +10,7 @@ function URL() {
   const [copied, setCopied] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  const [inputValue, setinputValue] = useState("");
+  const [inputValue] = useState("");
 
   const fetchData = async () => {
     try {
